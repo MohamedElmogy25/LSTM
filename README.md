@@ -1,6 +1,5 @@
 # Human Activity Recognition using CNN-LSTM
 
-<<<<<<< HEAD
 This project implements a deep learning model that combines Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) networks to classify human activities using smartphone sensor data. The model is trained on the UCI HAR (Human Activity Recognition) Dataset.
 
 ## Project Overview
@@ -64,8 +63,8 @@ matplotlib
 
 1. Clone this repository:
    ```bash
-   git clone [repository-url]
-   cd [repository-name]
+   git clone https://github.com/MohamedElmogy25/LSTM
+   cd LSTM
    ```
 
 2. Install required packages:
