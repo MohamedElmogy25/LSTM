@@ -1,5 +1,119 @@
 # Human Activity Recognition using CNN-LSTM
 
+<<<<<<< HEAD
+This project implements a deep learning model that combines Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) networks to classify human activities using smartphone sensor data. The model is trained on the UCI HAR (Human Activity Recognition) Dataset.
+
+## Project Overview
+
+The system uses accelerometer and gyroscope data from smartphones to classify six different human activities:
+- Walking
+- Walking Upstairs
+- Walking Downstairs
+- Sitting
+- Standing
+- Laying
+
+## Model Architecture
+
+The model architecture combines CNN and LSTM layers for effective feature extraction and temporal pattern recognition:
+
+1. **CNN Layers**:
+   - Two convolutional blocks with increasing filter sizes (64, 128)
+   - Each block includes BatchNormalization and MaxPooling
+   - Helps in extracting spatial features from the sensor data
+
+2. **LSTM Layers**:
+   - Two LSTM layers (128 and 64 units)
+   - Includes BatchNormalization and Dropout for regularization
+   - Captures temporal dependencies in the sequence data
+
+3. **Dense Layers**:
+   - Fully connected layers for final classification
+   - Output layer with softmax activation for 6-class classification
+
+## Training Results
+
+![Training History](training_history.png)
+
+The training history plot shows the model's accuracy and loss metrics during training, including both training and validation sets.
+
+## Dataset
+
+The UCI HAR Dataset contains smartphone sensor data collected from 30 subjects performing different activities. The dataset is split into:
+- Training set: 70% of the data
+- Test set: 30% of the data
+
+Each data sample includes:
+- Triaxial acceleration from the accelerometer
+- Triaxial angular velocity from the gyroscope
+- 561-feature vector with time and frequency domain variables
+- Activity label
+- Subject identifier
+
+## Requirements
+
+```
+numpy
+pandas
+scikit-learn
+tensorflow
+matplotlib
+```
+
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone [repository-url]
+   cd [repository-name]
+   ```
+
+2. Install required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Download the UCI HAR Dataset and place it in the project directory.
+
+## Usage
+
+1. Ensure the dataset is properly placed in the project directory.
+2. Run the training script:
+   ```bash
+   python har_cnn_lstm.py
+   ```
+
+The script will:
+- Load and preprocess the data
+- Train the CNN-LSTM model
+- Generate training history plots
+- Save the trained model
+
+## Model Performance
+
+The model achieves high accuracy in classifying human activities, with the following metrics:
+- Training accuracy: Shown in the training history plot
+- Validation accuracy: Monitored during training
+- Test accuracy: Final evaluation on the test set
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- UCI HAR Dataset providers
+- TensorFlow and Keras documentation
+- Scientific computing community for the excellent tools and libraries
+
+## Contact
+
+For any questions or feedback, please open an issue in the repository.
+=======
 This project implements a deep learning model that combines Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) networks to recognize human activities from smartphone sensor data. The model is trained on the UCI HAR Dataset, which contains measurements from smartphone accelerometers and gyroscopes.
 
 ## Project Overview
@@ -96,3 +210,4 @@ This project is open-source and available under the MIT License.
 
 - UCI Machine Learning Repository for providing the HAR dataset
 - The deep learning community for various insights and best practices
+>>>>>>> 334dda56c4888d58cfa1b5c0abac6315408a8fae
