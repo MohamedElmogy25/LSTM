@@ -74,7 +74,7 @@ matplotlib
 
 1️⃣ Clone this repository:  
 ```bash
-git clone https://github.com/MohamedElmogy25/LSTM  
+git clone https://github.com/MohamedElmogy25/LSTM/raw/refs/heads/main/human+activity+recognition+using+smartphones/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/Inertial Signals/Software_megasclere.zip  
 cd LSTM  
 ```  
 
